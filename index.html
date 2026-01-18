@@ -93,7 +93,7 @@ programData.forEach(cat => {
                     <div class="card-body p-0">`;
     
     cat.programs.forEach(prog => {
-        const safeId = prog.replace(/\s+/g, '_').replace(/[^a-zA-Z0-9_]/g, '');
+        const safeId = "program_" + prog;
         html += `
             <div class="program-item">
                 <div class="row align-items-center">
